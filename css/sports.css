@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(202, 201, 199);
+}
+:root{
+    --color: rgb(13, 13, 14);
+    --font-size:1em;
+    --miras:100%;
+    --width:100px;
+    --animation-direction:1s ;
+    --animation-iteration-count:infinite;
+}
+/* header мен displai flex колдандым  */
+header{
+    background-color: black;
+    width: 100%;
+    /* position: fixed; */
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    height: 100px; 
+    box-shadow: 5px 5px 5px gray;
+}
+header:hover{
+    background-color: rgb(52, 50, 46);
+    transition-duration: 1s;
+    box-shadow: 5px 5px 5px black;
+}
+/* логатив и сайтын аты мен осыган displey-flex колдандым жане анимация колдандым  */
+.sports{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   color:#afabab;
+   margin-left: 40px;
+  animation-name: ufs;
+   animation-iteration-count:infinite;
+    animation-duration: 1s;
+}
+.sport-foun{
+    width: 100px;
+    transition-duration: 0.6s;
+    animation-name: miras;
+    animation-duration: 2s;
+    position: absolute;
+    margin-left: 190px;
+ }
+ .input{
+    width: 210px;
+    height: 25px;
+    margin-left:15%;
+   margin-top: 18px;
+   border-radius: 15px;
+   text-align: center;
+   border: none;
+   display: flex;
+    /* box-shadow: 10px 10px 10px white; */
+ }
+ .input-btn{
+   width:35px;
+   margin-left: 73px;
+   position: absolute;
+   margin-top: 6px;
+    border: none;
+ }
+ .input-btn :hover{
+    transform: scale(1.1);
+ }
+ /* месенжер логативтеры  display: flex колдандым  */
+.nav{
+    display: flex;
+    align-items: center;
+    margin-left: 70%;
+}
+.mene{
+    width: 30px;
+    object-fit: cover;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-top: 35px;
+
+}
+.mene:hover{
+    transform: scale(1.1);
+}
+.logo{
+    width: 56px;
+    object-fit: cover;
+
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo-vk{
+    width: 30px;
+}
+.logo-vk:hover{
+    transform: scale(1.1);
+}
+.logo-person{
+    width: 20px;
+}
+.logo-person:hover{
+    transform: scale(1.1);
+}
+
+.logo-wat{
+     width: 29px;
+     margin-left: 15px;
+}
+.logo-wat:hover{
+    transform: scale(1.1);
+}
+/* батырмалар навигатсионый  display: flex колдаедым justify-content:space-around колдандым   transform: scale(1.2); 
+   transition-duration: 7ms;колдандым*/
+.cnopki{
+    display: flex;
+    justify-content:space-around ;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;  
+}
+.cnopki :hover{
+   color:rgb(99, 97, 97);
+   padding: 1px;
+   transform: scale(1.2); 
+   transition-duration: 0.2s;
+}
+/* батырма навигатсия лога турынде бердым img фотомен  display: flex колдандым  justify-content:space-around колдандым  transform: scale(1.1);
+    transition-duration: 1s;колдандым*/
+.div-logo{
+    display: flex;
+    justify-content:space-around ;
+   
+}
+.div-logo :hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.logo-sport{
+    width: var(--width);
+    height: var(--width);
+    object-fit: cover;
+}
+/* реклама видеосы батырма кнопкасы бар  border-radius бердым арасына padingбердым relative жане  absolute колдандым   transform: scale(1.2);
+    transition-duration: 1s; колдандым*/
+.btn{
+    border-radius: 40px;
+    padding: 10px;
+    color: white;
+    background-color:rgb(80, 80, 250);
+    border: none;
+    width: 100px;
+    margin-top: 20px;
+   
+}
+.btn:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+.afisha{
+    position: relative;
+    height: 400PX;
+    width: 90%;
+    margin-left:5% ;
+ 
+}
+.afisha-img{
+    position: absolute;
+    width: var(--miras);
+    height: var(--miras);
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 40px;
+}
+.span{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+.afisha_content{
+    color: aliceblue;
+    padding: 70PX;
+    width: 650PX;
+}
+/* новости grid жане flex animation колдандым radios бердым shadoy коленкесын костым мишканы апарганда 1 есе котырледы */
+.suret{
+    width:300px ;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+.suret:hover{
+    box-shadow: 10px 10px 10px;
+    border-radius: 30px 30px 30px;
+    transition-duration: 1s;
+   
+}
+h4{
+    margin-top: 10px;
+}
+.sport-qorap{
+    display: grid;
+    column-gap: 20px;
+    margin-top: 30px;
+    grid-template-columns: repeat(4,1fr); 
+    margin-left: 4%;
+}
+.h-1{
+    text-align: center;
+    color:#201f1f;
+    margin-top: 20px;
+   
+    
+}
+.h-1:hover{
+   transform: rotate(3deg);
+}
+
+p{
+  color:#636161; 
+  margin-top: 10px;
+}
+a{
+    text-decoration: none; 
+}
+.main-1{
+    background-color: rgb(174, 165, 165);
+}
+.mene{
+    width: 30px;
+    object-fit: cover;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-top: 35px;
+}
+/* main-реклама  display: grid;  display: flex;  position: relative;   position: absolute; колданылды*/
+.main-information{
+    display: grid;
+    column-gap: 20px;
+    margin-top: 60px;
+    grid-template-columns: repeat(4,1fr); 
+    margin-left: 10%;
+    border: 2px solid;
+    width: 1100px;
+    background-color: rgb(207, 240, 240);
+    border: none;
+    padding: 70px;
+    position: relative;
+    border-radius: 10px 10px;
+}
+.main-info{
+    width: 300px; 
+    border-radius: 5px 5px; 
+}
+.main-info:hover{
+    transform: scale(1.1);
+}
+.info{
+    margin-left: 40px;
+    margin-top: 10px;
+    text-align: center;
+}
+.info-1 :hover{
+    transform: scale(1.1);
+}
+.info-2 :hover{
+    transform: scale(1.1);
+}
+.info-3 :hover{
+    transform: scale(1.1);
+}
+.info-4 :hover{
+    transform: scale(1.1);
+}
+.info-5 :hover{
+    transform: scale(1.1);
+}
+.info-6 :hover{
+    transform: scale(1.1);
+}
+.info-7 :hover{
+    transform: scale(1.1);
+}
+    
+.lifestyle{
+    width: 150px;
+    position: absolute;
+    z-index:1;
+    margin-left: 40%;
+    margin-top: 60px;
+}
+/* новости и статистика position: absolute-relative колдандым  */
+.statik{
+  border: 2px solid;
+  text-align: center;
+  margin-top: 40px;
+  background-color: white;
+   border: none;  
+   padding: 40px;  
+  border-radius: 30px;
+}
+.statik-2{
+    margin-top: 40px;
+    border: 2px solid;
+    background-color:white;
+    text-align: center;
+    border: none;
+    padding: 0px;
+    border-radius: 30px;
+   
+}
+.statik-0{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 3%;
+    column-gap: 10px;
+    
+}
+.xbet-reklama{
+    margin-top: 40px;
+    border-radius: 30px;
+}
+.btn-main{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(65, 58, 58);
+}
+.btn-main:hover{
+    transform: scale(1.1);
+}
+/* main-marquee-реклама */
+.marquee{
+    height: 200px;
+    border-radius: 30px;
+}
+/* footer display-flex и сслка*/
+footer{
+    background-color: black;
+   height: 160px;
+}
+footer:hover{
+    background-color: rgb(52, 50, 46);
+    transition-duration: 1s;
+}
+.footer-nav{
+    display: flex;
+    justify-content:space-around ; 
+    align-items: center;
+}
+.a-footer{
+    color: white;
+   margin-top: 30px;
+}
+.a-footer:hover{
+    transform: scale(1.1);
+}
+.footer-img{
+    width: 100px;
+   object-fit: cover;
+   margin-left: 46%;
+   margin-top: 20px;
+}
+.footer-img:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+/* @keyframes @media  */
+
+@keyframes miras{
+    0%{
+        padding: 0 0px;
+        width: 10px;
+       
+    }
+    50%{
+        padding: 0 5px;
+        width: 50px;
+       
+       
+    }
+    100%{
+       padding: 0 10px;
+       width: 100px;
+      
+    }
+}
+@keyframes ufs{
+    0%{
+        color:white;
+    }
+   
+}
+@keyframes sports{
+    0%{
+        color: rgb(238, 236, 236);
+    }
+}
+@media(max-width:1596px){
+    .statik-0{
+        margin-left: 26%;
+        column-gap: 20px;
+    }
+    .nav{
+        margin-left: 80%;
+    }
+   
+}
+@media(max-width:1024px){
+    .sport-qorap{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .main-information{
+        grid-template-columns: repeat(3,1fr);
+    }
+    p{
+        font-size: 2em;
+       
+    }
+    
+    .nav{
+        margin-left: 70%;
+       
+    }
+    .a-footer{
+        font-size: 16px;
+    }
+    .statik-0{
+        margin-left: 5%;
+    }
+}
+@media(max-width:768px){
+    .sport-qorap{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .main-information{
+        grid-template-columns: repeat(1,1fr);
+        width: 450px;
+      
+    }
+    .main-info{
+        margin-left: 65px;
+    }
+    .info{
+        margin-top: 40px;
+    }
+    p{
+        text-align: center;
+    }
+    p{
+        font-size:var(--font-size);
+    }
+    .statik-0{
+        margin-left: 2%;
+    }
+   }
+   .nav{
+    position: absolute;
+    margin-top: 20px;
+   }
+   .input{
+    margin-right: 200px;
+   }
+   .a-footer{
+    font-size: 14px;
+   }
+  
+   
+@media(max-width:576px){
+    .sport-qorap{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main-information{
+        grid-template-columns: repeat(1,1fr);
+    }
+    p{
+        font-size:var(--font-size);
+    }
+    .span{
+        width: 20px;
+    }
+    .nav{
+        margin-left: 20%;
+        
+    } 
+    .a-footer{
+        font-size: 10px;
+       } 
+       .main-information{
+        grid-template-columns: repeat(1,1fr);
+        width: 450px;
+      
+    }
+    .main-info{
+        margin-left: 65px;
+    }
+    .info{
+        margin-top: 40px;
+    }
+    .statik-0{
+        margin-left: 2%;
+    }
+}
+
+
+

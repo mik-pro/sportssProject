@@ -1,0 +1,226 @@
+body{
+    background-color: rgb(202, 201, 199);
+}
+/* header мен displai flex колдандым  */
+header{
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;  
+    box-shadow: 5px 5px 5px gray;
+}
+header:hover{
+    background-color: rgb(52, 50, 46);
+    transition-duration: 1s;
+    box-shadow: 5px 5px 5px black;
+}
+/* логатив и сайтын аты мен осыган displey-flex колдандым жане анимация колдандым  */
+.sports{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   color: azure;
+   margin-left: 40px;
+
+}
+.sport-foun{
+    width: 100px;
+    transition-duration: 0.6s;
+    animation-name: miras;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    position: absolute;
+    margin-left: 190px;
+}
+.sport-foun:hover{
+    transform: scale(1.1);
+}
+ /* месенжер логативтеры  display: flex колдандым  */
+.nav{
+    display: flex;
+    align-items: center;
+    margin-left: 70%;
+}
+.mene{
+    width: 30px;
+    object-fit: cover;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-top: 35px;
+
+}
+.mene:hover{
+    transform: scale(1.1);
+}
+.logo{
+    width: 70px;
+    object-fit: cover;
+
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo-vk{
+    width: 40px;
+}
+.logo-vk:hover{
+    transform: scale(1.1);
+}
+.logo-person{
+    width: 30px;
+}
+.logo-person:hover{
+    transform: scale(1.1);
+}
+
+.logo-wat{
+     width: 40px;
+     margin-left: 15px;
+}
+.logo-wat:hover{
+    transform: scale(1.1);
+}
+/* батырмалар навигатсионый  display: flex колдаедым justify-content:space-around колдандым   transform: scale(1.2); 
+   transition-duration: 7ms;колдандым*/
+.cnopki{
+    display: flex;
+    justify-content:space-around ;
+    text-decoration: none;
+    color: black;
+    margin-top: 60px;  
+}
+.cnopki :hover{
+   color: rgb(99, 97, 97);
+   padding: 1px;
+   transform: scale(1.2);
+   transition-duration: 0.5s;
+}
+/* батырма навигатсия лога турынде бердым img фотомен  display: flex колдандым  justify-content:space-around колдандым  transform: scale(1.1);
+    transition-duration: 1s;колдандым*/
+.div-logo{
+    display: flex;
+    justify-content:space-around ;
+   
+}
+.div-logo :hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.logo-sport{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+/* mina пойск  */
+.name-html{
+    color: red;
+    text-align: center;
+}
+a{
+   
+    text-decoration: none;   
+}
+.main-1{
+ background-color: rgb(174, 165, 165);
+}
+.input{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 35%;
+    height: 30px;
+    border: none;
+     outline: none; 
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px black;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn-img{
+   width: 20px;
+   height: 20px;
+   
+}
+.btn{
+   width: 60px;
+   border-radius: 20px;
+   border: none;
+    margin-left: 10px; 
+    box-shadow: 2px 2px 2px black; 
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+    box-shadow: 5px 5px 5px black;
+   
+}
+/*  main видиео  */
+.youTube{
+    width:300px ;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 40px;
+   
+}
+
+.ufs{
+   display: flex;
+   justify-content: center;
+   margin: 30px;
+   column-gap: 20px;
+}
+iframe:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+/* footer display-flex и сслка */
+footer{
+    background-color: black;
+   height: 160px;
+}
+footer:hover{
+    background-color: rgb(52, 50, 46);
+    transition-duration: 1s;
+}
+.footer-nav{
+    display: flex;
+    justify-content:space-around ; 
+    align-items: center;
+}
+.a-footer{
+    color: white;
+   margin-top: 30px;
+}
+.a-footer:hover{
+    transform: scale(1.1);
+}
+.footer-img{
+    width: 100px;
+   object-fit: cover;
+   margin-left: 46%;
+   margin-top: 20px;
+}
+.footer-img:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+@media (max-width:1024px){
+   
+}
+@media (max-width:768px) {
+    .nav{
+        margin-left: 40%;
+      
+       }
+}
+@media (max-width:576px){
+    .nav{
+        margin-left: 20%;
+        
+    }
+}
